@@ -1,38 +1,945 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=, initial-scale=1.0">
-  <link rel="stylesheet" href="medilab.css">
-  <script src="fontawesome/js/all.min.js"></script>
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <script src=" bootstrap/js/bootstrap.bundle.min.js"></script>
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="medilab.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="lib/lightbox2-2.11.3/dist/css/lightbox.min.css">
+    <script src="fontawesome/js/all.min.js"></script>
+
+    <title>medilab project</title>
 </head>
 <body>
-  <ul class="nav nav-tabs flex-column">
-    <li class="nav-item">
-      <a class="nav-link active show" data-bs-toggle="tab" href="https://bootstrapmade.com/demo/templates/Medilab/#tab-1">Cardiology</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="tab" href="https://bootstrapmade.com/demo/templates/Medilab/#tab-2">Neurology</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="tab" href="https://bootstrapmade.com/demo/templates/Medilab/#tab-3">Hepatology</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="tab" href="https://bootstrapmade.com/demo/templates/Medilab/#tab-4">Pediatrics</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="tab" href="https://bootstrapmade.com/demo/templates/Medilab/#tab-5">Eye Care</a>
-    </li>
-  </ul>
-  <script>
-    let fname = "Ade";
-    let lname = "tade";
-    let fullName = fname + lname;
-    console.log(fullName)
-  </script>
+    <!--Head Section-->
+   <div class=" d-flex align-item-center justify-content-between p-3 text-primary head-section" id="Home">
+       <div class="container d-flex flex-row">
+          <div class="contact d-flex gap-3 align-item-center col-lg-8 col-xl-8 col-xxl-8 ">
+               <p><span class="fas fa-envelope"></span>
+                  Contact@example.com
+               </p>
+               <p><span class="fas fa-phone-alt"></span>
+                 +1 5589 55488 55
+               </p>
+               <p><span class="fas fa-map-marker-alt"></span>
+                  A108 Adam Street, NY
+               </p>
+           </div>
+           <div class="top-icons d-flex align-item-center gap-3 pr-5">
+                <span class="fab fa-twitter top-icon"></span>
+                <span class="fab fa-facebook top-icon"></span>
+                <span class= "fab fa-instagram top-icon"></span>
+                <span class="fab fa-skype top-icon"></span>
+                <span class="fab fa-linkedin top-icon"></span>
+           </div>
+        </div>
+   </div>
+
+   <!--Sticky Section-->
+    <nav class="navbar navbar-expand-lg bg-white navbar-white mt-3  sticky-top ">
+        <div class="container justify-content-center sticky-top justify-content-between-md">
+           <a href="#" class="logo order-lg-0 order-1">MEDILAB</a>
+           <button type="button" class="navbar-toggler order-3" data-bs-toggle="collapse" data-bs-target="#Navbarcollapse">
+               <span class="navbar-toggler-icon order-3"></span>
+           </button>
+           <div class="collapse navbar-collapse justify-content-end" id="Navbarcollapse">
+               <ul class="navbar-nav order-lg-0">
+                   <li class="nav-item"><a href="#Home" class="nav-link scrollto">Home</a></li>
+                   <li class="nav-item"><a href="#About" class="nav-link scrollto">About</a></li>
+                   <li class="nav-item"><a href="#Services" class="nav-link scrollto">Services</a></li>
+                   <li class="nav-item"><a href="#Department" class="nav-link scrollto">Department</a></li>
+                   <li class="nav-item"><a href="#Doctors" class="nav-link scrollto">Doctors</a></li>
+                   <li class="nav-item dropdown">
+                       <a href="#Drop Down" class="nav-link scrollto dropdown-toggle"
+                           data-bs-toggle="dropdown" role="button">Drop Down
+                       </a> 
+                       <ul class="dropdown-menu">
+                           <li><a href="#" class="dropdown-item">Drop Down 1</a></li>
+                           <li><a href="#" class="dropdown-item">Drop Down 2</a></li>
+                           <li><a href="#" class="dropdown-item">Drop Down 3</a></li>
+                           <li><a href="#" class="dropdown-item">Drop Down 4</a></li>
+                           <li><a href="#" class="dropdown-item">Drop Down 5</a></li>
+                       </ul>
+                    </li>
+                   <li class="nav-item"><a href="#Contact" class="nav-link scrollto">Contact</a></li>
+               </ul>
+           </div> 
+           <button type="button" class=" rounded-pill align-item-end Appointment text-white order-lg-0 order-2">Make an Appointment</button>
+        </div>
+    </nav>
+
+    <!--Image Section-->
+    <div class="image-section d-flex align-item-center justify-content-center">
+        <div class="container mt-5 justify-content-center">
+            <h1>WELCOME TO MEDILAB</h1>
+            <p>welcome are team of talented designers making website with Bootstrap</p>
+            <button type="button" class="rounded-pill get-started">Get Started</button>
+        </div>
+    </div>
+        <div class=" row justify-content-end mb-5 mx-sm-3 mx-lg-3">
+                <div class="col-md-12 col-lg-3 text-white p-4 choose me-xl-3  me-lg-3">
+                   <h2 class=" mb-4 why"><b>Why Choose medilab?</b></h2>
+                   <p class="why-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                       sed do eiusmod tempor inciditunt et labore et dolore magna aliqua.
+                       Duis aute irure dolor in reprehenderit Asperiores dolores sed et.
+                       Tenetur quia eos. Autem tempore quisbusdem vel necessitatibus ad corporis.
+                    </p>
+                   <button type="button" style="display: block;justify-content: center;"
+                       class="btn rounded-pill btn-primary mx-auto">learn More 
+                      <span class="fas fa-caret-right ml-2"></span>
+                    </button>
+                </div>
+            <div class="col-md-12 col-lg-8 row gap-3 mt-5 mb-5 mx-xl-0">
+                <div class=" col-md-12 col-lg-12 col-xl-3 bg-white text-center mt-4 mb-4 file py-2 px-3" id="tri-card">
+                    <span class="fas fa-receipt text-primary mt-4 mb-5  icon-card"></span>
+                    <h4 class="pb-4">corporis voluptates sit</h4>
+                    <p >Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+               </div>
+               <div class="col-md-12 col-lg-12 col-xl-3 bg-white text-center mt-4 file mb-4" id="tri-card">
+                   <span class="fas fa-cube text-primary mt-4 mb-5 icon-card"></span>
+                   <h4 class="pb-4">Ullamco laboris ladore pan</h4>
+                   <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+               </div>
+               <div class="col-md-12 col-lg-12 col-xl-3 bg-white text-center mt-4 file mb-4" id="tri-card">
+                   <span class="fas fa-image text-primary mt-4 mb-5 icon-card"></span>
+                   <h4 class="pb-4">Labore consequatur</h4>
+                   <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+               </div>
+            </div>
+        </div>
+
+        <!--Video-Section-->
+    <div class="container-fluid row" id="About">
+        <div class=" mb-5 col-xl-5 col-lg-6 d-flex about justify-content-center position-relative">
+            <a href="#" class="video-play"><span class="fas fa-play play-btn"></span></a>
+        </div>
+        <div class="col-xl-7 col-lg-6 d-flex flex-column justify-content-center px-lg-5 py-4"  id="about">
+            <h3 class="pb-3">Enim quis est voluptatibus aliquid consequatur fugiat</h3>
+            <p class="pb-3">Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus.
+               Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi.
+               Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.
+            </p>
+            <div class=" my-3 ">
+                <div id="icon" class="float-start py-3"><span class="fas fa-fingerprint "></span></div>
+                <h4 class="title">Lorem Ipsum</h4>
+                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                   cupiditate non provident
+                </p>
+            </div>
+            <div class="my-3 ">
+                <div id="icon" class="float-start py-3"><span class="fas fa-gift"></span></div>
+                <h4 class="title">Nemo Enim</h4>
+                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditi is
+                    praesentium voluptatum deleniti atque
+                </p>
+            </div>
+            <div class=" my-3 ">
+                <div id="icon" class="float-start py-3"><span class="fas fa-atom"></span></div>
+                <h4 class="title">Dine Pad</h4>
+                 <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit.
+                    Sunt aut deserunt minus aut eligendi omnis
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--count section-->
+    <div class="bg-light justify-content-center px-xl-0 py-5 mb-5 ">
+        <div class="row justify-content-center gap-3 mx-sm-5">
+            <div class="card-count col-md-5  col-lg-4 col-xl-2  bg-white text-center mx-sm-3  border-0">
+               <div class="card-image mb-5"><span class="fa fa-user-md text-white"></span></div>
+                <h3 class="card-title mt-5">85</h3>
+                <p class="card-text">Doctors</p>
+            </div>
+            <div class="card-count col-md-5  col-lg-4 col-xl-2  bg-white text-center count-box mx-sm-3 border-0">
+                <div class="card-image mb-5"><span class="far fa-hospital text-white"></span></div>
+                <h3  class="card-title mt-5">25</h3>
+                <p class="card-text">Departments</p>
+            </div>
+            <div class="card-count col-md-5  col-lg-4 col-xl-2  bg-white text-center count-box border-0 mx-sm-3">
+                <div class="card-image mb-5"><span class="fas fa-flask text-white"></span></div>
+                <h3 class="card-title mt-5">8</h3>
+                <p class="card-text">Research Labs</p>
+            </div>
+            <div class=" card-count col-md-5  col-lg-4 col-xl-2  bg-white text-center count-box border-0 mx-sm-3 justify-content-center">
+                <div class="card-image  mb-5"><span class="fas fa-award text-white"></span></div>
+                <h3 class="card-title mt-5">150</h3>
+                <p class="card-text">Awards</p>
+            </div>
+        </div>
+    </div>
+    <!--Service section-->
+    <div class="mx-lg-4 mb-5 justify-content-center service" id="Services" >
+        <div class="container text-center title">
+           <h2>Services</h2>
+           <div class="progress bg-white justify-content-center">
+               <div class="progress-bar bg-light" style="width: 40px;height: 2px;"></div>
+               <div class="progress-bar bg-primary" style="width: 40px;height: 3px; border-radius: 2px;padding-bottom: 2px;"></div>
+               <div class="progress-bar bg-light" style="width: 40px;height: 2px;"></div>
+           </div>
+           <div class=" justify-content-center text-center m">
+               <p>Magnam dolores commodi suscipit. Necessitatibus e us consequatur ex aliquid fuga eum quidem.
+                  Sit sint consecteturvelit. Quisquam quos quisquam cupiditate. Et nemo qui impecit suscipit allas ea.
+                  Quia fugiat sit in iste officiiscommodi quidem hic quas. 
+                </p>
+           </div>
+        </div>
+        <div class=" mt-2">
+            <div class="row justify-content-center m-0 p-0">
+                <div class="icons-box col-12 col-md-5 col-lg-5 col-xl-3 text-center py-5 px-2  mt-3 ms-sm-4">
+                    <div class="icon py-3 mt-2"><span class="fas fa-heartbeat"></span></div>
+                    <h4 class="py-3"">Lorem ipsum</h4>
+                    <p class="pb-2" >Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                </div>
+                <div class="icons-box text-center col-12 col-md-5 col-lg-5 col-xl-3 py-5 ms-3 mt-3" >
+                    <div class="icon py-3 mt-2"><span class="fas fa-pills"></span></div>
+                    <h4 class="py-3">Sed ut perspicitias</h4>
+                    <p class="pb-2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+                <div class="icons-box text-center col-12  col-md-5 col-lg-5 col-xl-3 py-5 ms-3 mt-3">
+                    <div class="icon py-3 mt-2"><span class="fas fa-hospital"></span></div>
+                    <h4 class="py-3">Magni Dolores</h4>
+                    <p class="pb-2 ">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                </div>
+                <div class="icons-box text-center col-12 col-md-5 col-lg-5 col-xl-3  py-5 ms-3 mt-3">
+                    <div class="icon py-3 mt-2"><span class="fas fa-dna"></span></div>
+                    <h4 class="py-3">Nemo Enim</h4>
+                    <p class="pb-2">At vero eos et accusamus et lusto odio dignissimos ducimus qui blanditiis</p>
+                </div>
+                <div class="icons-box text-center col-12 col-md-5 col-lg-5 col-xl-3  py-5 ms-3 mt-3">
+                    <div class="icon py-3 mt-2"><span class="fas fa-wheelchair"></span></div>
+                    <h4 class="py-3">Dele Cardo</h4>
+                    <p class="pb-2">Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+                </div>
+                <div class="icons-box text-center col-12 col-md-5 col-lg-5 col-xl-3 py-5 ms-3 mt-3">
+                    <div class="icon py-3 mt-2"><span class="fas fa-notes-medical"></span></div>
+                    <h4 class="py-3">Divero Don</h4>
+                    <p class="pb-2">Modi nostrum vel laborum. porro fugit error sit minus sapiente sit aspernaur</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Make an Appointment-->
+    <div id="Appointment">
+        <div class="bg-light mt-5 pt-5 px-lg-4 justify-content-center text-center mb-5 pb-5">
+            <div class="container title">
+                <h2>Make An Appointment</h2>
+                <div class="progress bg-light justify-content-center">
+                   <div class="progress-bar " style="width: 40px;height: 2px;background-color: rgb(221,221,221)"></div>
+                   <div class="progress-bar bg-primary" style="width: 40px;height: 3px; border-radius: 2px;padding-bottom: 2px;"></div>
+                   <div class="progress-bar" style="width: 40px;height: 2px;background-color: rgb(221,221,221);"></div>
+               </div>
+              <div class=" justify-content-center text-center">
+                   <p>Magnam dolores commodi suscipit. Necessitatibus e us consequatur ex aliquid fuga eum quidem.
+                       Sit sint consecteturvelit. Quisquam quos quisquam cupiditate. Et nemo qui impecit suscipit allas ea.
+                       Quia fugiat sit in iste officiiscommodi quidem hic quas. 
+                   </p>
+               </div>
+            </div>
+            <div class=" align-item-center">
+                    <form action="" class="justify-content-center container">
+                        <div class="row justify-content-center mb-4 mx-sm-4 mx-lg-auto">
+
+                        <div class="col-lg-12 row col-md-0">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-sm-3">
+                                <input type="text" placeholder="Your Name" class="form-control" name="text">
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-sm-3">
+                                <input type="text" placeholder="Your Email" class="form-control" name="Email">
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-sm-3">
+                                <input type="text" placeholder="Your Phone" class="form-control" name="phone">
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-sm-3">
+                                <input type="text" placeholder="Appointment Date" class="form-control" name="text">
+                            </div>
+                            <div class=" col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-sm-3">
+                                <select placeholder="Select Department" class=" form-select" name="Email">
+                                    <datalist id="Departments">
+                                        <option value="Depatment 1">Select Department</option>
+                                        <option value="Depatment 1">Depatment 2</option>
+                                        <option value="Depatment 1">Depatment 3</option>
+                                        <option value="Depatment 1">Depatment 4</option>
+                                        <option value="Depatment 1">Department 5</option>
+                                    </datalist>
+                                </select>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-sm-3">
+                                <select placeholder="Select Department" class=" form-select form-control" name="Email">
+                                    <datalist id="Departments">
+                                        <option value="Depatment 1">Select Doctor</option>
+                                        <option value="Depatment 1">Doctor 2</option>
+                                        <option value="Depatment 1">Doctor 3</option>
+                                        <option value="Depatment 1">Doctor 4</option>
+                                        <option value="Depatment 1">Doctor 5</option>
+                                    </datalist>
+                                </select>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="container justify-content-center col-lg-12 col-md-10 row mt-3">
+                            <textarea name="text" id="comment" class=" form-control" rows="7"
+                                placeholder="Message (Optional)">
+                            </textarea>
+                        </div>
+                    </form>
+               </div>
+            <button type="button" class=" text-white  rounded-pill align-item-center Appointment mt-3">Make an Appointment</button>
+        </div>
+    </div>
+    <!--Department Section-->
+    <div class="Department my-5" id="Department">
+        <div class="container title justify-content-center text-center">
+            <h2>Department</h2>
+            <div class="progress bg-white justify-content-center">
+                <div class="progress-bar " style="width: 40px;height: 2px;background-color: rgb(221,221,221)"></div>
+                <div class="progress-bar bg-primary" style="width: 40px;height: 3px; border-radius: 2px;padding-bottom: 2px;"></div>
+                <div class="progress-bar" style="width: 40px;height: 2px;background-color: rgb(221,221,221);"></div>
+            </div>
+            <div class=" justify-content-center text-center">
+                <p>Magnam dolores commodi suscipit. Necessitatibus e us consequatur ex aliquid fuga eum quidem.
+                    Sit sint consecteturvelit. Quisquam quos quisquam cupiditate. Et nemo qui impecit suscipit allas ea.
+                    Quia fugiat sit in iste officiiscommodi quidem hic quas. 
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center my-5">
+            <ul class="nav nav-tabs flex-column col-lg-3 col-md-8 col-sm-8">
+                <li class="nav-item"><a href="#Cardiology" class="nav-link active"  data-bs-toggle="tab">Cardiology</a></li>
+                <li class="nav-item"><a href="#Neurology" class="nav-link"  data-bs-toggle="tab">Neurology</a></li>
+                <li class="nav-item"><a href="#Hepatology" class="nav-link" data-bs-toggle="tab">Hepatology</a></li>
+                <li class="nav-item"><a href="#Pediatrics" class="nav-link" data-bs-toggle="tab">Pediatrics</a></li>
+                <li class="nav-item"><a href="#Eyecare" class="nav-link " data-bs-toggle="tab">Eye care</a></li>
+            </ul>
+
+            <div class="tab-content col-lg-7 col-md-8 col-sm-8">
+                <div class="tab-pane active" id="Cardiology">
+                    <div class="row text-start">
+                        <div class="col-lg-8 pane-text order-lg-0 order-2">
+                            <h3>Cardiology</h3>
+                            <p>Qui laudantium consequatur laborum sit qui ad sapiente dila parde
+                                sonata raqer a videna mareta paulona marka
+                            </p>
+                            <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint.
+                                Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui.
+                                Est repellat minima eveniet eius et quis magni nihil.
+                                Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero
+                            </p>
+                        </div>
+                        <div class="col-lg-4 text-center order-lg-0 order-1 mt-md-3"><img src="img/departments-1.jpg" alt="" class="img-fluid" ></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Neurology">
+                    <div class="row text-start">
+                        <div class="col-lg-8 pane-text order-lg-0 order-2">
+                            <h3>Et blanditiis nemo veritatis excepturi</h3>
+                            <p>Qui laudantium consequatur laborum sit qui ad
+                                sapiente dila parde sonata raqer a videna mareta paulona marka
+                            </p>
+                            <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est.
+                                Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates.
+                                Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal
+                            </p>
+                        </div>
+                        <div class="col-lg-4 text-center order-lg-0 order-1 mt-md-3"><img src="img/departments-2.jpg" alt="" class="img-fluid h-fit-content"></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Hepatology">
+                    <div class="row text-start">
+                        <div class="col-lg-8 pane-text order-lg-0 order-2">
+                            <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+                            <p>Eos voluptatibus quo. Odio similique illum id quidem non enim fuga.
+                                Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut
+                            </p>
+                            <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam.
+                                Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae
+                                sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam.
+                                Soluta et harum voluptatem optio quae
+                            </p>
+                        </div>
+                        <div class="col-lg-4 order-lg-0 order-1 mt-md-3"><img src="img/departments-3.jpg" alt="" class="img-fluid"></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Pediatrics">
+                    <div class="row text-start">
+                        <div class="col-lg-8 pane-text order-lg-0 order-2">
+                            <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                            <p>Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
+                            <p>Eaque consequuntur consequuntur libero expedita in voluptas. 
+                                Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. 
+                                Eum ex maxime error in consequatur corporis atque.
+                                Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore
+                            </p>
+                        </div>
+                        <div class="col-lg-4 order-lg-0 order-1 mt--md-3"><img src="img/departments-4.jpg" alt="" class="img-fluid"></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Eyecare">
+                    <div class="row text-start">
+                        <div class="col-lg-8 pane-text order-lg-0 order-2">
+                            <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                            <p>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                            <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus.
+                                Omnis recusandae ut non quam ut quod eius qui. 
+                                Ipsum quia odit vero atque qui quibusdam amet. 
+                                Occaecati sed est sint aut vitae molestiae voluptate vel
+                            </p>
+                        </div>
+                        <div class="col-lg-4 order-lg-0 order-1 mt-md-3"><img src="img/departments-5.jpg" alt="" class="img-fluid"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Doctors Section-->
+    <div class="Doctor" id="Doctors">
+        <div class="my-5  ms-lg-3 me-lg-3">
+            <div class="container title  justify-content-center text-center">                <h2>Doctors</h2>
+                <div class="progress bg-white justify-content-center">
+                    <div class="progress-bar " style="width: 40px;height: 2px;background-color: rgb(221,221,221)"></div>
+                    <div class="progress-bar bg-primary" style="width: 40px;height: 3px; border-radius: 2px;padding-bottom: 2px;"></div>
+                    <div class="progress-bar" style="width: 40px;height: 2px;background-color: rgb(221,221,221);"></div>
+                </div>
+                <div class=" justify-content-center text-center">
+                    <p class="">Magnam dolores commodi suscipit. Necessitatibus e us consequatur ex aliquid fuga eum quidem.
+                        Sit sint consecteturvelit. Quisquam quos quisquam cupiditate. Et nemo qui impecit suscipit allas ea.
+                        Quia fugiat sit in iste officiiscommodi quidem hic quas. 
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center gap-3">
+                <div class="col-lg-5 col-md-10 pt-3 pb-3 row doctor-card bg-white mx-lg-3 mb-lg-4">
+                    <div class="col-4">
+                        <img src="img/doctors/doctors-1.jpg" alt="" class="img-fuid doctor-img ">
+                    </div>
+                    <div class="col-7 doctor-text flex-column ms-lg-4">
+                        <h4>Walter White</h4>
+                        <h6>Chief Medical Officer</h6>
+                        <p id="border-bottom"></p>
+                        <p class="w-100">Explicabo voluptatem mollitia et repellat qui dolor quasi</p>
+                        <div class="d-flex gap-2">
+                            <div class="doctor-icon py-1 px-2"><span class="fab fa-facebook "></span></div>
+                            <div class="doctor-icon py-1 px-2"><span class="fab fa-twitter"></span></div>
+                            <div class="doctor-icon py-1 px-2"><span class="fab fa-instagram"></span></div>
+                            <div class="doctor-icon py-1 px-2"><span class="fab fa-linkedin"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-10 pt-3 pb-3 row doctor-card bg-white mx-lg-3 mb-lg-4">
+                    <div class="col-4">
+                        <img src="img/doctors/doctors-2.jpg" alt="" class="img-fuid doctor-img">
+                    </div>
+                    <div class="col-7 doctor-text flex-column ms-lg-4">
+                        <h4>Sarah Jhonson</h4>
+                        <h6>Anesthesiologist</h6>
+                        <p id="border-bottom"></p>
+                        <p class="w-100">Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                        <div class="d-flex gap-2">
+                            <div class="doctor-icon py-1 px-2"><span class="fab fa-facebook "></span></div>
+                            <div class="doctor-icon py-1 px-2"><span class="fab fa-twitter"></span></div>
+                            <div class="doctor-icon py-1 px-2"><span class="fab fa-instagram"></span></div>
+                            <div class="doctor-icon py-1 px-2"><span class="fab fa-linkedin"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-10 pt-3 pb-3 row doctor-card bg-white mx-lg-3 mb-lg-4">
+                    <div class="col-4">
+                        <img src="img/doctors/doctors-3.jpg" alt="" class="img-fuid doctor-img">
+                    </div>
+                    <div class="col-7 doctor-text flex-column ms-lg-4">
+                        <h4>William Anderson</h4>
+                        <h6>Cardiology</h6>
+                        <p id="border-bottom"></p>
+                        <p class="w-100">Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                        <div class="d-flex gap-2">
+                            <div class="doctor-icon py-1 px-2"><span class="fab fa-facebook "></span></div>
+                            <div class="doctor-icon py-1 px-2"><span class="fab fa-twitter"></span></div>
+                            <div class="doctor-icon py-1 px-2"><span class="fab fa-instagram"></span></div>
+                            <div class="doctor-icon py-1 px-2"><span class="fab fa-linkedin"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-10  pt-3 pb-3 row doctor-card bg-white mx-lg-3 mb-lg-4">
+                    <div class="col-4">
+                        <img src="img/doctors/doctors-4.jpg" alt="" class="img-fuid doctor-img">
+                    </div>
+                    <div class="col-7 doctor-text flex-column ms-lg-4">
+                        <h4>Amanda Jepson</h4>
+                        <h6>Neurosurgeon</h6>
+                        <p id="border-bottom"></p>
+                        <p class="w-100">Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                        <div class="d-flex gap-2">
+                            <div class="doctor-icon py-1 px-2"><span class="fab fa-facebook "></span></div>
+                            <div class="doctor-icon py-1 px-2"><span class="fab fa-twitter"></span></div>
+                            <div class="doctor-icon py-1 px-2"><span class="fab fa-instagram"></span></div>
+                            <div class="doctor-icon py-1 px-2"><span class="fab fa-linkedin"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FAQ Section-->
+    <div class="faq bg-light">
+        <div class=" py-4 container">
+            <div class=" container title text-center">                
+                <h2>Frequently Asked Question</h2>
+                <div class="progress bg-light justify-content-center">
+                    <div class="progress-bar " style="width: 40px;height: 2px;background-color: rgb(221,221,221)"></div>
+                    <div class="progress-bar bg-primary" style="width: 40px;height: 3px; border-radius: 2px;padding-bottom: 2px;"></div>
+                    <div class="progress-bar" style="width: 40px;height: 2px;background-color: rgb(221,221,221);"></div>
+                </div>
+                <div class="justify-content-center text-center">
+                    <p class="">Magnam dolores commodi suscipit. Necessitatibus e us consequatur ex aliquid fuga eum quidem.
+                        Sit sint consecteturvelit. Quisquam quos quisquam cupiditate. Et nemo qui impecit suscipit allas ea.
+                        Quia fugiat sit in iste officiiscommodi quidem hic quas. 
+                    </p>
+                </div>
+            </div>
+            <div class="container justify-content-center">
+            <div id="accordion" class="accordion accordion-flush justify-content-center ">
+                <!--item 1-->
+                <div class="accordion-item active mt-5 mb-2 bg-white  col-10">
+                    <h2 class="accordion-header bg-white d-flex  p-3" id="flush-headingOne">
+                            <span class="fas fa-question-circle question-mark"></span>
+                           <button 
+                           class="bg-white accordion-button collapsed border-0"
+                           type="button"
+                           data-bs-toggle="collapse" 
+                           data-bs-target="#flush-collapseOne"
+                           aria-expanded="false"
+                           aria-controls="flush-collapseOne">
+                                Non consectatur a erat nam at lectus una duais
+                           </button>
+                        </h2>
+                    <div class="accordion-collapse collapse" 
+                    id="flush-collapseOne"
+                    aria-labelledby="flush-headingOne" 
+                    data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
+                                Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--item 2-->
+                <div class="accordion-item mt-2 mb-2 bg-white  col-10">
+                    <h2 class="accordion-header bg-white d-flex  p-3" id="flush-headingTwo">
+                            <span class="fas fa-question-circle question-mark"></span>
+                           <button 
+                           class="bg-white accordion-button collapsed border-0"
+                           type="button"
+                           data-bs-toggle="collapse" 
+                           data-bs-target="#flush-collapseTwo"
+                           aria-expanded="false"
+                           aria-controls="flush-collapseTwo">
+                                Non consectatur a erat nam at lectus una duais
+                           </button>
+                        </h2>
+                    <div class="accordion-collapse collapse" 
+                    id="flush-collapseTwo"
+                    aria-labelledby="flush-headingTwo" 
+                    data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
+                                Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--item 3-->
+                <div class="accordion-item mt-2 mb-2 bg-white  col-10">
+                    <h2 class="accordion-header bg-white d-flex  p-3" id="flush-headingThree">
+                            <span class="fas fa-question-circle question-mark"></span>
+                           <button 
+                           class="bg-white accordion-button collapsed border-0"
+                           type="button"
+                           data-bs-toggle="collapse" 
+                           data-bs-target="#flush-collapseThree"
+                           aria-expanded="false"
+                           aria-controls="flush-collapseThree">
+                                Non consectatur a erat nam at lectus una duais
+                           </button>
+                        </h2>
+                    <div class="accordion-collapse collapse" 
+                    id="flush-collapseThree"
+                    aria-labelledby="flush-headinThree" 
+                    data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
+                                Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--item 4-->
+                <div class="accordion-item mt-2 mb-2 bg-white  col-10">
+                    <h2 class="accordion-header bg-white d-flex  p-3" id="flush-headingFour">
+                            <span class="fas fa-question-circle question-mark"></span>
+                           <button 
+                           class="bg-white accordion-button collapsed border-0"
+                           type="button"
+                           data-bs-toggle="collapse" 
+                           data-bs-target="#flush-collapseFour"
+                           aria-expanded="false"
+                           aria-controls="flush-collapseFour">
+                                Non consectatur a erat nam at lectus una duais
+                           </button>
+                        </h2>
+                    <div class="accordion-collapse collapse" 
+                    id="flush-collapseFour"
+                    aria-labelledby="flush-headingFour" 
+                    data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
+                                Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--item 5-->
+                <div class="accordion-item mt-2 mb-2 bg-white  col-10">
+                    <h2 class="accordion-header bg-white d-flex  p-3" id="flush-headingFive">
+                            <span class="fas fa-question-circle question-mark"></span>
+                           <button 
+                           class="bg-white accordion-button collapsed border-0"
+                           type="button"
+                           data-bs-toggle="collapse" 
+                           data-bs-target="#flush-collapseFive"
+                           aria-expanded="false"
+                           aria-controls="flush-collapseFive">
+                                Non consectatur a erat nam at lectus una duais
+                           </button>
+                        </h2>
+                    <div class="accordion-collapse collapse" 
+                    id="flush-collapseFive"
+                    aria-labelledby="flush-headingFive" 
+                    data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
+                                Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--Carousel Section-->
+    <div class="container-fluid  mt-5 mb-5">
+        <div class="container ">
+        <div class="slider owl-carousel owl-theme">
+                <!--img 1-->
+                <div class="media shadow p-3 mx-5 my-5  d-flex">
+                    <img src="img/testimonials/testimonials-1.jpg" alt="" 
+                    class="img-testimony img-fluid"  \
+                    style="width: 70px;height: 70px;">
+                    <div class=" media-body px-3">
+                       <h3>Matt Brandon</h3>
+                       <h4>Freelance</h4>
+                       <blockquote>
+                           <span class="fas fa-quote-left qoute-left"></span>
+                           Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos
+                           export minim fugiat minim velit minim dolor enim duis
+                            veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                           <span class="fas fa-quote-right qoute-right"></span>
+                       </blockquote>
+                    </div>
+                </div>
+                <!--img 2-->
+                <div class=" media shadow p-3 mx-5 my-5 d-flex">
+                    <img src="img/testimonials/testimonials-2.jpg" alt="" 
+                    class="img-testimony img-fluid"
+                    style="width: 70px;height: 70px;">
+                    <div class=" media-body px-3">
+                       <h3>Matt Brandon</h3>
+                       <h4>Freelance</h4>
+                       <blockquote>
+                           <span class="fas fa-quote-left qoute-left"></span>
+                           Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos
+                           export minim fugiat minim velit minim dolor enim duis
+                            veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                           <span class="fas fa-quote-right qoute-right"></span>
+                       </blockquote>
+                    </div>
+                </div>
+                <!--img 3-->
+                <div class="media shadow p-3 mx-5 my-5 d-flex">
+                    <img src="img/testimonials/testimonials-3.jpg" alt="" 
+                    class="img-testimony img-fluid"
+                    style="width: 70px;height: 70px;">
+                    <div class=" media-body px-3">
+                       <h3>Matt Brandon</h3>
+                       <h4>Freelance</h4>
+                       <blockquote>
+                           <span class="fas fa-quote-left qoute-left"></span>
+                           Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos
+                           export minim fugiat minim velit minim dolor enim duis
+                            veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                           <span class="fas fa-quote-right qoute-right"></span>
+                       </blockquote>
+                    </div>
+                </div>
+                <!--img 4-->
+                <div class="media shadow p-3 mx-5 my-5 d-flex">
+                    <img src="img/testimonials/testimonials-4.jpg" alt="" 
+                    class="img-testimony img-fluid"
+                    style="width: 70px;height: 70px;">
+                    <div class=" media-body px-3" >
+                       <h3>Matt Brandon</h3>
+                       <h4 >Freelance</h4>
+                       <blockquote >
+                           <span class="fas fa-quote-left qoute-left"></span>
+                           Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos
+                           export minim fugiat minim velit minim dolor enim duis
+                            veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                           <span class="fas fa-quote-right qoute-right"></span>
+                       </blockquote>
+                    </div>
+                </div>
+                <!--img 5-->
+                <div class="media shadow p-3 mx-5 my-5 d-flex">
+                    <img src="img/testimonials/testimonials-5.jpg" alt="" 
+                    class="img-testimony img-fluid "
+                    style="width: 70px;height: 70px;">
+                    <div class=" media-body px-3">
+                       <h3>Matt Brandon</h3>
+                       <h4>Freelance</h4>
+                       <blockquote>
+                           <span class="fas fa-quote-left qoute-left"></span>
+                           Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos
+                           export minim fugiat minim velit minim dolor enim duis
+                            veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                           <span class="fas fa-quote-right qoute-right"></span>
+                       </blockquote>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </div>
+    
+    <!--Gallery Section-->
+    <div class="gallery" id="Gallery">
+        <div class=" mt-5 mb-5">
+            <div class=" container title justify-content-center text-center">                
+                <h2>Gallery</h2>
+                <div class="progress bg-white justify-content-center">
+                    <div class="progress-bar " style="width: 40px;height: 2px;background-color: rgb(221,221,221)"></div>
+                    <div class="progress-bar bg-primary" style="width: 40px;height: 3px; border-radius: 2px;padding-bottom: 2px;"></div>
+                    <div class="progress-bar" style="width: 40px;height: 2px;background-color: rgb(221,221,221);"></div>
+                </div>
+                <div class=" justify-content-center text-center">
+                    <p class="">Magnam dolores commodi suscipit. Necessitatibus e us consequatur ex aliquid fuga eum quidem.
+                        Sit sint consecteturvelit. Quisquam quos quisquam cupiditate. Et nemo qui impecit suscipit allas ea.
+                        Quia fugiat sit in iste officiiscommodi quidem hic quas. 
+                    </p>
+                </div>
+            </div>
+        </div>
+            <div class=" d-flex-md no-guttters mx-lg-2" style="margin: 10px 0px;" >
+                <div class=" row no-guttters p-0 m-0" style="margin: 0px;">
+                <div class="img-responsive col-lg-3 col-md-12 mb-md-2 mb-lg-0 mx-xl-0" style="margin: 0px;padding: 0;">
+                    <a href="img/gallery/gallery-1.jpg" data-lightbox="gallery" >
+                        <img src="img/gallery/gallery-1.jpg" alt="" class="img-fluid img-gallery">
+                    </a>
+                </div>
+                <div class="img-responsive col-lg-3 col-md-12 mb-md-2 mb-lg-0 mx-xl-0 " style="margin: 0px;padding: 0;">
+                    <a href="img/gallery/gallery-2.jpg" data-lightbox="gallery">
+                        <img src="img/gallery/gallery-2.jpg" alt="" class="img-fluid img-gallery">
+                    </a>
+                </div>
+                <div class="img-responsive col-lg-3 col-md-12 mb-md-2 mb-lg-0 mx-xl-0" style="margin: 0px;padding: 0;">
+                    <a href="img/gallery/gallery-3.jpg" data-lightbox="gallery">
+                        <img src="img/gallery/gallery-3.jpg" alt="" class="img-fluid img-gallery">
+                    </a>
+                </div>
+                <div class="img-responsive col-lg-3 col-md-12 mb-md-2 mb-lg-0 mx-xl-0" style="margin: 0px;padding: 0;">
+                    <a href="img/gallery/gallery-4.jpg" data-lightbox="gallery">
+                        <img src="img/gallery/gallery-4.jpg" alt="" class="img-fluid img-gallery">
+                    </a>
+                </div>
+                <div class="img-responsive col-lg-3 col-md-12 mb-md-2 mb-lg-0" style="margin: 0px;padding: 0;">
+                    <a href="img/gallery/gallery-5.jpg" data-lightbox="gallery">
+                        <img src="img/gallery/gallery-5.jpg" alt="" class="img-fluid img-gallery">
+                    </a>
+                </div>
+                <div class="img-responsive col-lg-3 col-md-12 mb-md-2 mb-lg-0" style="margin: 0px;padding: 0;">
+                    <a href="img/gallery/gallery-6.jpg" data-lightbox="gallery">
+                        <img src="img/gallery/gallery-6.jpg" alt="" class="img-fluid img-gallery">
+                    </a>
+                </div>
+                <div class="img-responsive col-lg-3 col-md-12 mb-md-2 mb-lg-0" style="margin: 0px;padding: 0;">
+                    <a href="img/gallery/gallery-7.jpg" data-lightbox="gallery">
+                        <img src="img/gallery/gallery-7.jpg" alt="" class="img-fluid img-gallery">
+                    </a>
+                </div>
+                <div class="img-responsive col-lg-3 col-md-12 mb-md-2 mb-lg-0" style="margin: 0px;padding: 0;">
+                    <a href="img/gallery/gallery-8.jpg" data-lightbox="gallery">
+                        <img src="img/gallery/gallery-8.jpg" alt="" class="img-fluid img-gallery">
+                    </a>
+                </div>
+            </div>
+    </div>
+    <!--Contact Section-->
+    <div class="contact mb-5" id="Contact">
+        <div class="mb-5 mt-5">
+            <div class="container title justify-content-center text-center">                
+                <h2>Contact</h2>
+                <div class="progress bg-white justify-content-center">
+                    <div class="progress-bar " style="width: 40px;height: 2px;background-color: rgb(221,221,221)"></div>
+                    <div class="progress-bar bg-primary" style="width: 40px;height: 3px; border-radius: 2px;padding-bottom: 2px;"></div>
+                    <div class="progress-bar" style="width: 40px;height: 2px;background-color: rgb(221,221,221);"></div>
+                </div>
+                <div class=" justify-content-center text-center">
+                    <p class="">Magnam dolores commodi suscipit. Necessitatibus e us consequatur ex aliquid fuga eum quidem.
+                        Sit sint consecteturvelit. Quisquam quos quisquam cupiditate. Et nemo qui impecit suscipit allas ea.
+                        Quia fugiat sit in iste officiiscommodi quidem hic quas. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row justify-content-center ">
+                <div class="col-lg-4">
+                   <div class="location d-flex mt-3">
+                       <div class="location-icon me-3 py-3"><span class="fas fa-map-marker-alt"></span></div>
+                       <div>
+                           <h4 class="pt-2"><b>Location:</b></h4>
+                           <p class="text-primary">A108 Adam Street, NY</p>
+                       </div>
+                   </div>
+                   <div class="location d-flex mt-3">
+                    <div class="location-icon me-3 py-3"><span class="fas fa-envelope"></span></div>
+                    <div>
+                        <h4 class="pt-2"><b>Email:</b></h4>
+                        <p class="text-primary"> Contact@example.com</p>
+                    </div>
+                </div>
+                <div class="location d-flex mt-3">
+                    <div class="location-icon me-3 py-3"><span class="fas fa-phone-alt"></span></div>
+                    <div>
+                        <h4 class="pt-2"><b>Call:</b></h4>
+                        <p class="text-primary">+1 5589 55488 55</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-7 ms-3 row flex-column mt-3">
+                    <form action="">
+                        <div class="row mb-3">
+                            <div class="col-lg-6">
+                               <input type="text" placeholder="Your Name" class="form-control">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="Your Name" class="form-control">
+                             </div>
+                        </div>
+                        <div class="col-lg-12 mb-3">
+                            <input type="text" placeholder="Subject" class="form-control">
+                        </div>
+                        <textarea name="" id="" rows="6" placeholder="Message" class="form-control col-lg-10"></textarea>
+                        <button type="submit" class="mt-3 send justify-content-center d-block mx-auto py-2 px-3 rounded-pill">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Useful Links-->
+    <div class=" useful-link">
+        <div class="row justify-content-center mx-md-3 mx-sm-5">
+            <div class="col-lg-2 col-md-6">
+                <h4>Medilab</h4>
+                <p>A108 Adam Street <br>
+                   New York, NY 535022 <br>
+                   United State <br> <br>
+                   <b>Phone:</b >+1 5589 55488 55 <br>
+                   <b>Email:</b> info@example.com
+                </p>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h4>Useful Links</h4>
+                <p><span class="fas fa-chevron-right me-1 text-primary"></span>Home</p>
+                <p><span class="fas fa-chevron-right me-1 text-primary"></span>About Us</p>
+                <p><span class="fas fa-chevron-right me-1 text-primary"></span>Services</p>
+                <p><span class="fas fa-chevron-right me-1 text-primary"></span>Terms of Services</p>
+                <p><span class="fas fa-chevron-right me-1 text-primary"></span>Privacy Policy</p>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h4>Our Services</h4>
+                <p><span class="fas fa-chevron-right me-1 text-primary"></span>Web Designing</p>
+                <p><span class="fas fa-chevron-right me-1 text-primary"></span>Web Development</p>
+                <p><span class="fas fa-chevron-right me-1 text-primary"></span>Product Management</p>
+                <p><span class="fas fa-chevron-right me-1 text-primary"></span>Marketing</p>
+                <p><span class="fas fa-chevron-right me-1 text-primary"></span>Graphics Designing</p>
+            </div>
+            <div class="col-lg-4 col-md-6 news-form">
+                <h4>Join Our Newsletter</h4>
+                <p>Tarem quem nulla quae legam multos aute sint <br> culpa legam noster magna</p>
+                <form method="post">
+                    <input type="text" name="text"><input type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Footer Section-->
+    <div class="footer text-center  bg-light ">
+        <div class="container d-flex py-3 justify-content-between">
+           <div class="copyright align-item-center">
+               <div>@ Copyright <b>Medilab</b>. All Right Reserved</div>
+               <div class="text-start">Desiged by <a href="#" class="bootstrapmade">BootstrapMade</a></div>
+           </div>
+           <div class="align-item-center d-flex gap-3">
+               <div class="footer-icon py-2"><span class="fab fa-twitter "></span></div>
+               <div class="footer-icon py-2"><span class="fab fa-facebook"></span></div>
+               <div class="footer-icon py-2"><span class="fab fa-instagram"></span></div>
+                <div class="footer-icon py-2"><span class="fab fa-skype"></span></div>
+                <div class="footer-icon py-2"><span class="fab fa-linkedin"></span></div>
+           </div>
+        </div>
+    </div>
+
+    <!--Back-to-top-->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center active">
+        <span class="fas fa-arrow-up"></span>
+      </a>
+
+
+
+       <script src="lib/jquery-3.6.1.min.js"></script>
+       <script src="medilab.js"></script>
+       <script src="lib/OwlCarousel/dist/owl.carousel.min.js"></script>
+      <script src=" bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="lib/lightbox2-2.11.3/dist/js/lightbox.min.js"></script>
+        
+
+    <script>
+        $ (document).ready(function () {
+    $('.owl-carousel').owlCarousel();
+});
+    $('.owl-carousel').owlCarousel({
+        items: 2,
+        loop: true,
+        margin: 10,
+        responsiveClass:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:0
+            },
+            1000:{
+                items:2
+            }
+        }
+    });
+    </script>
 </body>
 </html>
